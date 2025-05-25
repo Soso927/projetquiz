@@ -37,9 +37,6 @@
     👉 Donne une bonne réponse ET fais un compliment sincère à un·e autre joueur·se ? +1 point bonus ❤️
     
 
----
-
-Si tu veux un format plus formel ou ludique (par exemple des cartes avec emojis, des jokers "HTML", des "patchs correctifs" pour rattraper une mauvaise réponse), je peux t’aider à les créer aussi.
 
 Tu as déjà un titre préféré parmi ceux proposés ou tu veux que je parte d’un autre ?
 1. 👉 **Pour ton application**, tu peux adapter ça avec des catégories **dev web** comme :
@@ -71,34 +68,37 @@ Tu as déjà un titre préféré parmi ceux proposés ou tu veux que je parte d�
 
 ### 2. Github :Donner accès en tant que collaborateur (pour un dépôt privé)**
 
-Si vous travaillez sur un dépôt privé et que vous souhaitez permettre à un autre utilisateur de contribuer, vous devez l'ajouter en tant que collaborateur.
+Si je souhaite travailler sur un dépôt privé et que je souhaite permettre à ma collègue Esther de contribuer je dois l'ajouter en tant que collaboratrice 
 
 Voici comment faire :
 
-1. Allez sur la page du dépôt GitHub.
+1. Je dois aller sur la page Github.
     
-2. Cliquez sur **Settings** (en haut à droite de la page du dépôt).
+2. il faut cliquer sur **Settings** (en haut à droite de la page du dépôt).
     
-3. Dans la barre latérale gauche, sélectionnez **Manage access**.
+3. Dans la barre latérale gauche, je dois sélectionner **Manage access**.
     
 4. Cliquez sur le bouton **Invite a collaborator**.
     
-5. Tapez le nom d’utilisateur GitHub de la personne avec laquelle vous souhaitez partager le projet.
+5. Tapez le nom d’utilisateur GitHub D'Eshter avec laquelle vous souhaitez partager le projet.
     
 6. Cliquez sur **Add collaborator**.
     
 
-L’autre utilisateur recevra une invitation à accepter, et une fois acceptée, il pourra accéder au dépôt et y apporter des modifications.
+Ma collègue Esther recevra une invitation à accepter, et une fois accepté, elle pourra accéder au dépôt et y apporter des modifications. 
+
 
 ### 3. **Forker le dépôt**
 
-Si vous souhaitez que l’autre utilisateur puisse avoir sa propre copie du projet et y apporter des modifications sans affecter l’original, vous pouvez lui demander de **forker** votre dépôt.
+Pour que ma collègue Esther puisse avoir sa propre copie du projet et y apporter des modifications sans affecter l'original, je peux lui demander de **forker** le dépôt
 
-- Sur la page de votre dépôt, l'autre utilisateur peut cliquer sur le bouton **Fork** en haut à droite.
+- Sur la page de mon dépôt, Esther peut cliquer sur le bouton **Fork** en haut à droite.
     
-- Cela créera une copie de votre projet dans son propre compte GitHub. Il pourra travailler dessus de manière indépendante et soumettre des **pull requests** pour proposer des modifications sur le dépôt original.
+- Cela créera une copie de notre projet dans son propre compte GitHub. Elle pourra travailler dessus de manière indépendante et soumettre des **pull requests** pour proposer des modifications sur le dépôt original.
 
-les polices : 
+les polices : RougeScript, Dynapuff
+
+
 
 
 

@@ -6,5 +6,13 @@
         "choices": ["'être toujours d'accord avec tout le monde ?', 'Montrer de la gentillesse et de l'empathie envers les autres', 'Ignorer les sentiments des autres'"],
         "answer": "Montrer de la gentillesse et de l'empathie envers les autres",
         "correcte": true
+    },
+    {
+        "id": 2 ,
+        "question": "Comment peut-on montrer de la bienveillance au quotidien ?" ,
+        "type": "multiple",
+        "choices":["'en aidant quelqu'un qui a besoin d'aide', 'En se moquant des autres', 'En restant indifférent','En ignorant les problèmes des autres'"] ,
+        "answer": "en aidant quelqu'un qui a besoin d'aide",
+        "correcte": true 
     }
 ]
