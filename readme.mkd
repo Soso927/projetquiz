@@ -9,7 +9,7 @@
  Titre : La quête du code 
  Promesse : un trivial Pursuit 100% Bienveillant, le jeu qui compile fun, savoir et entraide ! (à reprendre plus tard)
  thème abordée : Allier développement web, bienveillance... et une pincée d'humour pour un code qui fait sourire !
- les règles : 
+ les règles du jeu : 
 
 ### 🎲 Exemple de titre : **"Trivial Dev : le quiz bienveillant du web"**
 
@@ -80,7 +80,7 @@ Voici comment faire :
     
 4. Cliquez sur le bouton **Invite a collaborator**.
     
-5. Tapez le nom d’utilisateur GitHub D'Eshter avec laquelle vous souhaitez partager le projet.
+5. Tapez le nom d’utilisateur GitHub D'Eshter avec laquelle je souhaite partager le projet.
     
 6. Cliquez sur **Add collaborator**.
     
@@ -98,9 +98,16 @@ Pour que ma collègue Esther puisse avoir sa propre copie du projet et y apporte
 
 les polices : RougeScript, Dynapuff
 
+les couleurs que l'on utilisera : 
 
+- vert foncé : #006400
+- bleu nuit : #191970
+- blanc : #FFFFFF
+- doré : #B3A500
 
+Pour la constructions des pages,  pour la page d'accueil : il faudra le titre "La quête du code", avec le logo en haut à gauche. la promesse au centre de la page et le menu burger en haut à droite. 
 
+pour les thèmes abordées : il faudra cliquer sur le bouton menu dans lequel il affichera les thèmes abordées. 
 
 
 
