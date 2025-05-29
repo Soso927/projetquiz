@@ -1,44 +1,44 @@
-// ce fichier permettra de charger les questions depuis le fichier JSON, affichera les options sous forme de boutons radio et calculera le score une fois le quiz soumis 
-// import questions from './dev.json';
-// import reponses from './dev.json';
-// import bienveillance from './bienveillance.json';
+// Fonction pour charger les données JSON
+async function chargerQuestions(fichier) {
+    try {
+        const reponse = await fetch(fichier);
+        return await reponse.json();
+    } catch (erreur) {
+        console.error(`Erreur de chargement: ${erreur}`);
+        return null;
+    }
+}
 
+// Fonction pour afficher une question
+function afficherQuestion(questionObj) {
+    const questionElement = document.getElementById('question');
+    const choixElement = document.getElementById('choices');
+    
+    // Afficher la question
+    questionElement.textContent = questionObj.question;
+    
+    // Créer les boutons radio
+    choixElement.innerHTML = '';
+    questionObj.choices.forEach((choix, index) => {
+        const div = document.createElement('div');
+        div.className = 'choix';
+        div.innerHTML = `
+            <input type="radio" name="reponse" value="${index}" id="choix${index}">
+            <label for="choix${index}">${choix}</label>
+        `;
+        choixElement.appendChild(div);
+    });
+}
 
-let score = 0; // j'initialise le score et compte le nombre de réponse 
+// Initialisation du quiz
+async function initialiserQuiz() {
+    const donnees = await chargerQuestions('questions.json');
+    if (donnees && donnees.length > 0) {
+        afficherQuestion(donnees[0]);
+    } else {
+        console.error('Aucune donnée trouvée');
+    }
+}
 
-// const questions = await fetch ("dev.json");
-// console.dir(questions);
-// const reponses = await fetch ("dev.json");
-// console.log(reponses);
-// const bienveillance = await fetch ("bienveillance.json");
-// console.log(bienveillance);
-// const boutons = document.querySelector("#bouton");
-// console.log(boutons);
-
-    // Charger le fichier JSON avec fetch
-    fetch('questions.json')
-      .then(response => response.json())
-      .then(data => {
-        // Récupérer la première question
-        const questionObj = data[0];
-        
-        // Choisir une variante aléatoire de la question
-        const randomIndex = Math.floor(Math.random() * questionObj.questionsVariants.length);
-        const questionText = questionObj.questionsVariants[randomIndex];
-        
-        // Afficher la question
-        document.getElementById('question').textContent = questionText;
-        
-        // Afficher les choix de réponses
-        const ul = document.getElementById('choices');
-        ul.innerHTML = ''; // vider la liste avant d’ajouter
-        
-        questionObj.choices.forEach(choice => {
-          const li = document.createElement('li');
-          li.textContent = choice;
-          ul.appendChild(li);
-        });
-      })
-      .catch(error => {
-        console.error('Erreur lors du chargement du fichier JSON:', error);
-      });
+// Démarrer le quiz
+initialiserQuiz();

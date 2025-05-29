@@ -9,35 +9,36 @@
   <script type="module" src="./src/js/quiz.js" defer></script>
   
   <script type="module" defer>
-    // Fonction asynchrone pour récupérer les données du quiz en fonction du thème
-    async function fetchQuizData(theme) {
-      try {
-        let filePath; // Déclare une variable pour le chemin du fichier
-        // Détermine le chemin du fichier JSON en fonction du thème sélectionné
-        if (theme === 'dev') {
-          filePath = './src/js/dev.json';
-        } else if (theme === 'rire') {
-          filePath = './src/js/rire.json';
-        } else {
-          console.error('Thème inconnu :', theme); // Affiche une erreur si le thème n'est pas reconnu
-          return null; // Retourne null en cas d'erreur
-        }
+    // <script>
+    // // Fonction asynchrone pour récupérer les données du quiz en fonction du thème
+    // async function fetchQuizData(theme) {
+    //   try {
+    //     let filePath; // Déclare une variable pour le chemin du fichier
+    //     // Détermine le chemin du fichier JSON en fonction du thème sélectionné
+    //     if (theme === 'dev') {
+    //       filePath = './src/js/dev.json';
+    //     } else if (theme === 'rire') {
+    //       filePath = './src/js/rire.json';
+    //     } else {
+    //       console.error('Thème inconnu :', theme); // Affiche une erreur si le thème n'est pas reconnu
+    //       return null; // Retourne null en cas d'erreur
+    //     }
 
-        // Utilise fetch pour récupérer le fichier JSON
-        const response = await fetch(filePath);
-        // Vérifie si la réponse HTTP est OK (statut 200)
-        if (!response.ok) {
-          throw new Error(`Erreur HTTP ! statut : ${response.status} pour ${filePath}`);
-        }
-        // Parse la réponse JSON
-        const data = await response.json();
-        console.log(`Données chargées pour le thème ${theme} :`, data);
-        return data; // Retourne les données JSON
-      } catch (error) {
-        console.error(`Erreur lors de la récupération de ${theme}.json :`, error);
-        return null; // Retourne null en cas d'erreur lors du fetch
-      }
-    }
+    //     // Utilise fetch pour récupérer le fichier JSON
+    //     const response = await fetch(filePath);
+    //     // Vérifie si la réponse HTTP est OK (statut 200)
+    //     if (!response.ok) {
+    //       throw new Error(`Erreur HTTP ! statut : ${response.status} pour ${filePath}`);
+    //     }
+    //     // Parse la réponse JSON
+    //     const data = await response.json();
+    //     console.log(`Données chargées pour le thème ${theme} :`, data);
+    //     return data; // Retourne les données JSON
+    //   } catch (error) {
+    //     console.error(`Erreur lors de la récupération de ${theme}.json :`, error);
+    //     return null; // Retourne null en cas d'erreur lors du fetch
+    //   }
+    // }
 
     // Exemple d'utilisation (ces appels devraient être dans quiz.js en fonction des interactions utilisateur) :
     // fetchQuizData('dev'); // Appelle la fonction pour le thème 'dev'
@@ -45,7 +46,7 @@
 
     // Votre fichier quiz.js contiendra probablement la logique pour appeler fetchQuizData
     // en fonction des clics sur les boutons de thème.
-  </script>
+  // </script>
 </head>
 <body>
   <div class="container">
