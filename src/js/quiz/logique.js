@@ -1,44 +1,121 @@
-// Fonction pour charger les données JSON
-async function chargerQuestions(fichier) {
-    try {
-        const reponse = await fetch(fichier);
-        return await reponse.json();
-    } catch (erreur) {
-        console.error(`Erreur de chargement: ${erreur}`);
-        return null;
+const questions = [
+        {
+        "id": 1,
+        "question": "Qu'est-ce que le HTML ?",
+        "type": "text",
+        "answer": "Le HTML (Hypertext Markup Language en français langage de balise de l'hypertext) est le langage de base du web."
+    },
+    {
+        "id": 2,
+        "question": "À quoi sert-il le HTML ?",
+        "type": "text",
+        "answer": "il sert à structurer le contenu d'une page (titres, paragraphes, images,liens,etc.).",
+        "correcte": true
+    },
+    {
+        "id": 3,
+        "question": "Que veut dire CSS ?",
+        "type": "text",
+        "answer": "Cascading Style sheets ou feuille de style en cascade en français"
+    },
+    {
+        "id": 4,
+        "question": "À quoi sert le CSS ?",
+        "type": "text",
+        "answer": "Le CSS sert à styliser le HTML : couleurs,polices,tailles,marges,positionnement,etc. Il sépare le contenu (HTML) de la présentation (CSS).",
+        "correcte":true
+    },
+    {
+        "id": 5,
+        "question": "Quel est l'élement HTML utilisé pour insérer une image dans une page web ?",
+        "type": "multiple",
+        "choices": ["<img>", "<picture>", "<image>", "<imagefile>"],
+        "answer": "<img>",
+        "correcte": true
+    },
+    {
+        "id": 6,
+        "question": "Que fait la balise <p> en HTML ?",
+        "type": "multiple",
+        "choices": [""],
+        "answer": "<img>",
+        "correcte": true
+    },
+    {
+        "id": 7,
+        "question": "Quelle balise HTML est utilisée pour créer un lien hypertexte ?",
+        "type": "multiple",
+        "choices": ["<a>, <p>, <h1>, <h3>"],
+        "answer": "<a>",
+        "correcte": true
+    },
+    {
+        "id": 8,
+        "question": "quelle propriété CSS est utilisées pour changer de couleur de fond d'un élément ?",
+        "type": "multiple",
+        "choices": ["'color', 'background-color', 'border-color','text-color'"],
+        "answer": "background-color",
+        "correcte": true
+    },
+    {
+        "id": 9,
+        "question": "Quel est l'effet de la propriété CSS 'text-align ?",
+        "type": "multiple",
+        "choices": ["'Aligner le texte verticalement','aligner le texte horizontalement', 'Modifier la couleur du texte', 'Appliquer une ombre au texte'"],
+        "answer": "Aligner le texte horizontalement",
+        "correcte": true
+    },
+    {
+        "id": 10,
+        "question": "Quelle balise HTML est utilisée pour définir un titre de niveau 1 sur une page ?",
+        "type": "multiple",
+        "choices": ["<header> , <h1>, <title>, <h6>"],
+        "answer": "<h1>",
+        "correcte": true
     }
-}
 
-// Fonction pour afficher une question
-function afficherQuestion(questionObj) {
-    const questionElement = document.getElementById('question');
-    const choixElement = document.getElementById('choices');
+]
+console.log(questions);
+let currentQuestionIndex = 0;
+let score = 0;
+
+const quizcontainer = document.getElementById('quiz-container');
+const themeButtons = document.querySelectorAll('#choix-theme button');
+
+// async function chargerQuestions(){
+//     try {
+//         await new Promise(resolve => setTimeout (resolve,500));
+//         return questions ;
+//     } catch (erreur) {
+//         console.error('Erreur lors du chargement du questions :', erreur);
+//         throw erreur;
+//     }
+// }
+
+
+function afficherQuestion(question) {
+    const questionElement = document.createElement('div');
+    questionElement.className = 'question-container';
     
-    // Afficher la question
-    questionElement.textContent = questionObj.question;
-    
-    // Créer les boutons radio
-    choixElement.innerHTML = '';
-    questionObj.choices.forEach((choix, index) => {
-        const div = document.createElement('div');
-        div.className = 'choix';
-        div.innerHTML = `
-            <input type="radio" name="reponse" value="${index}" id="choix${index}">
-            <label for="choix${index}">${choix}</label>
+    if (question.type === 'multiple') {
+        questionElement.innerHTML = `
+            <h3>${question.question}</h3>
+            <div class="choices">
+                ${question.choices.map(choice => `
+                    <label>
+                        <input type="radio" name="reponse-${question.id}" value="${choice}">
+                        ${choice}
+                    </label>
+                `).join('')}
+            </div>
         `;
-        choixElement.appendChild(div);
-    });
-}
-
-// Initialisation du quiz
-async function initialiserQuiz() {
-    const donnees = await chargerQuestions('questions.json');
-    if (donnees && donnees.length > 0) {
-        afficherQuestion(donnees[0]);
     } else {
-        console.error('Aucune donnée trouvée');
+        questionElement.innerHTML = `
+            <h3>${question.question}</h3>
+            <textarea class="reponse-texte"></textarea>
+        `;
     }
+    
+    return questionElement;
 }
-
-// Démarrer le quiz
-initialiserQuiz();
+console.log(afficherQuestion);
