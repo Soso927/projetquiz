@@ -1,18 +1,52 @@
-    [
-    {
-        "id": 1,
-        "question": "Qu'est ce que la bienveillance ?",
-        "type": "multiple",
-        "choices": ["'être toujours d'accord avec tout le monde ?', 'Montrer de la gentillesse et de l'empathie envers les autres', 'Ignorer les sentiments des autres'"],
-        "answer": "Montrer de la gentillesse et de l'empathie envers les autres",
-        "correcte": true
-    },
-    {
-        "id": 2 ,
-        "question": "Comment peut-on montrer de la bienveillance au quotidien ?" ,
-        "type": "multiple",
-        "choices":["'en aidant quelqu'un qui a besoin d'aide', 'En se moquant des autres', 'En restant indifférent','En ignorant les problèmes des autres'"] ,
-        "answer": "en aidant quelqu'un qui a besoin d'aide",
-        "correcte": true 
-    }
+[
+  {
+    "id": 1,
+    "question": "Pourquoi les pirates n’utilisent jamais de balises <table> en HTML ?",
+    "reponses": [
+      "Parce qu’ils préfèrent les bateaux aux tableaux ! 🏴‍☠️",
+      "Parce que ça les fait ramer comme sur un galion.",
+      "Ils pensent que <table> c’est une mutinerie sémantique."
+    ],
+    "bonne_reponse": 0
+  },
+  {
+    "id": 2,
+    "question": "Quel est le langage préféré des pirates développeurs ?",
+    "reponses": [
+      "Rrrrruby ! 💎",
+      "JavaArrrrr ! ☕",
+      "C-shaaarrrp ! 🎻"
+    ],
+    "bonne_reponse": 1
+  },
+  {
+    "id": 3,
+    "question": "Pourquoi le pirate a refusé de commit son code ?",
+    "reponses": [
+      "Parce qu’il voulait garder son trésor en local ! 🗺️",
+      "Il n’avait pas confiance en GitHub, il préfère les coffres forts.",
+      "Il a cru que `git push` allait le pousser à l’eau."
+    ],
+    "bonne_reponse": 0
+  },
+  {
+    "id": 4,
+    "question": "Comment un pirate débogue son site ?",
+    "reponses": [
+      "Il utilise la console pour trouver les bugs... et les bouteilles de rhum. 🍹",
+      "Il crie ‘Arrr!’ jusqu’à ce que le bug s’en aille.",
+      "Il envoie le site marcher sur la planche."
+    ],
+    "bonne_reponse": 1
+  },
+  {
+    "id": 5,
+    "question": "Pourquoi les pirates détestent les 404 ?",
+    "reponses": [
+      "Parce qu’ils cherchent toujours leur trésor, pas une page perdue ! 🧭",
+      "Ils croient que c’est le code pour un naufrage.",
+      "Ils pensent que 404 est un rival du Capitaine Crochet."
+    ],
+    "bonne_reponse": 0
+  }
 ]

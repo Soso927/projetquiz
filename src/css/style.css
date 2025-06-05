@@ -1,138 +1,112 @@
-/* Variables CSS pour les couleurs (facile à modifier !) */
+/*
+  Projet : La quête du code
+  Équipe : Sofiane & Esther
+  Date de rendu : 11 juin 2025
+  Portes ouvertes : 19 juin 2025
+  Type : Quiz sur le développement web et la bienveillance
+  Thème : fun, savoir, entraide, humour !
+*/
+
+/* Import des polices */
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Rouge+Script&display=swap');
+
+/* Variables couleurs */
 :root {
-    --couleur-fond-principal: #2c3e50; /* Bleu foncé / Gris anthracite */
-    --couleur-texte-principal: #ecf0f1; /* Blanc cassé */
-    --couleur-bouton-fond: #3498db;   /* Bleu clair */
-    --couleur-bouton-texte: white;
-    --couleur-bouton-hover: #2980b9;  /* Bleu plus foncé au survol */
-    --couleur-boite-contenu: #34495e; /* Gris moyen */
-
-    /* Couleurs pour les thèmes, inspirées de l'idée de catégories distinctes */
-    --theme-dev-couleur: #e74c3c;    /* Rouge pour Développement */
-    --theme-bienveillance-couleur: #27ae60; /* Vert pour Bienveillance */
-    --theme-rire-couleur: #f39c12;   /* Orange pour Humour */
+  --vert-fonce: #006400;
+  --bleu-nuit: #191970;
+  --blanc: #FFFFFF;
+  --dore: #B3A500;
+  --font-titre: 'Rouge Script', cursive;
+  --font-contenu: 'DynaPuff', cursive;
 }
 
-/* Styles généraux pour le corps de la page */
+/* Base */
 body {
-    font-family: 'Arial', sans-serif; /* Police simple et lisible */
-    background-color: var(--couleur-fond-principal);
-    color: var(--couleur-texte-principal);
-    display: flex;
-    justify-content: center; /* Centrer le contenu horizontalement */
-    align-items: center; /* Centrer le contenu verticalement */
-    min-height: 100vh; /* La hauteur minimale est 100% de la hauteur de la fenêtre */
-    margin: 0;
-    padding: 20px; /* Un peu d'espace autour du contenu */
-    box-sizing: border-box; /* Inclure le padding dans la largeur/hauteur */
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-contenu);
+  background-color: var(--bleu-nuit);
+  color: var(--blanc);
 }
 
-/* Conteneur principal du jeu */
-.container {
-    background-color: var(--couleur-boite-contenu);
-    border-radius: 12px; /* Coins arrondis */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Ombre légère pour un effet de profondeur */
-    padding: 30px;
-    width: 100%;
-    max-width: 700px; /* Largeur maximale pour un design agréable sur grand écran */
-    text-align: center; /* Centrer le texte à l'intérieur du conteneur */
+h1, h2, h3 {
+  font-family: var(--font-titre);
+  color: var(--dore);
 }
 
-/* Titre principal */
-h1 {
-    color: var(--couleur-bouton-fond); /* Couleur vive pour le titre */
-    margin-bottom: 20px;
-    font-size: 2.5em; /* Grande taille de police */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Légère ombre sur le texte */
+header {
+  background-color: var(--vert-fonce);
+  padding: 1rem;
+  text-align: center;
+  border-bottom: 3px solid var(--dore);
 }
 
-/* Paragraphe de promesse */
-.promesse {
-    font-style: italic;
-    color: var(--couleur-texte-principal);
-    margin-bottom: 30px;
-    font-size: 1.1em;
+header h1 {
+  font-size: 3rem;
+  margin: 0;
 }
 
-/* Section de choix de thème */
-#choix-theme {
-    display: flex; /* Utiliser Flexbox pour aligner les boutons */
-    justify-content: center; /* Centrer les boutons horizontalement */
-    gap: 20px; /* Espace entre les boutons */
-    margin-bottom: 40px;
-    flex-wrap: wrap; /* Permet aux boutons de passer à la ligne sur petits écrans */
+main {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-/* Styles des boutons de thème */
-#choix-theme button {
-    background-color: var(--couleur-bouton-fond);
-    color: var(--couleur-bouton-texte);
-    border: none;
-    padding: 15px 25px;
-    border-radius: 8px; /* Coins arrondis pour les boutons */
-    font-size: 1.2em;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease; /* Transition douce */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Ombre sur les boutons */
+.question {
+  background-color: var(--vert-fonce);
+  border: 2px solid var(--dore);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 0 15px var(--dore);
 }
 
-#choix-theme button:hover {
-    background-color: var(--couleur-bouton-hover);
-    transform: translateY(-2px); /* Léger effet de soulèvement au survol */
+.reponse {
+  background-color: var(--bleu-nuit);
+  border: 2px solid var(--blanc);
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 0.5rem 0;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
-/* Styles spécifiques pour chaque thème (pour un effet visuel de catégorie) */
-#choix-theme button[data-theme="dev"] {
-    background-color: var(--theme-dev-couleur);
-}
-#choix-theme button[data-theme="dev"]:hover {
-    background-color: darken(var(--theme-dev-couleur), 10%); /* Nécessite un préprocesseur CSS ou ajuster manuellement */
-    filter: brightness(90%); /* Alternative CSS native pour assombrir */
+.reponse:hover {
+  background-color: var(--vert-fonce);
 }
 
-#choix-theme button[data-theme="bienveillance"] {
-    background-color: var(--theme-bienveillance-couleur);
-}
-#choix-theme button[data-theme="bienveillance"]:hover {
-    background-color: darken(var(--theme-bienveillance-couleur), 10%);
-    filter: brightness(90%);
-}
-
-#choix-theme button[data-theme="rire"] {
-    background-color: var(--theme-rire-couleur);
-}
-#choix-theme button[data-theme="rire"]:hover {
-    background-color: darken(var(--theme-rire-couleur), 10%);
-    filter: brightness(90%);
+footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: var(--dore);
 }
 
-/* Conteneur du quiz (sera rempli par JavaScript) */
-#quiz-container {
-    background-color: rgba(0, 0, 0, 0.2); /* Fond semi-transparent */
-    border-radius: 8px;
-    padding: 20px;
-    min-height: 150px; /* Hauteur minimale pour qu'il soit visible */
-    display: flex; /* Utiliser flex pour centrer le contenu futur */
-    justify-content: center;
-    align-items: center;
-    font-size: 1.3em;
-    color: var(--couleur-texte-principal);
-    border: 1px dashed rgba(255, 255, 255, 0.3); /* Bordure en pointillé pour indiquer un contenu dynamique */
+/* Boutons */
+button {
+  font-family: var(--font-contenu);
+  font-size: 1rem;
+  padding: 0.5rem 1.5rem;
+  border-radius: 6px;
+  border: none;
+  background-color: var(--dore);
+  color: var(--bleu-nuit);
+  cursor: pointer;
+  transition: transform 0.2s;
 }
 
-/* Media Queries pour la responsivité */
-@media (max-width: 600px) {
-    h1 {
-        font-size: 2em;
-    }
+button:hover {
+  transform: scale(1.05);
+}
 
-    #choix-theme {
-        flex-direction: column; /* Empile les boutons sur petits écrans */
-        gap: 15px;
-    }
-
-    #choix-theme button {
-        width: 80%; /* Les boutons prennent plus de place */
-        max-width: 300px;
-    }
+/* Quiz terminé */
+.resultats {
+  background-color: var(--vert-fonce);
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+  color: var(--blanc);
+  border: 2px solid var(--dore);
+  box-shadow: 0 0 10px var(--dore);
+  margin-top: 2rem;
 }

@@ -1,37 +1,113 @@
-[
+{
+  
+  "theme": "Bienveillance",
+
+  
+  "questions": [
     {
-        "id": 1,
-        "nom": "Pas besoin d’être un·e expert·e",
-        "regle de bienveillance": "👉 Ce quiz est un moment de partage,, pas un test de performance. L’objectif est de s’amuser, pas de se juger. "
+     
+      "question": "La bienveillance, c’est avant tout :",
+      
+   
+      "answers": [
+        "Faire plaisir à tout le monde",
+        "Être gentil même quand on est en colère",
+        "Porter attention aux autres avec respect et compréhension", 
+        "Éviter les conflits à tout prix"
+      ],
+
+      
+      "correct": 2
     },
     {
-        "id": 2,
-        "nom": "Droit à l’erreur = droit d’apprendre", 
-        "regle de bienveillance": "👉 Chaque mauvaise réponse est une opportunité d’apprendre quelque chose de nouveau (et parfois drôle)."
+      "question": "Que faire si un·e collègue se trompe pendant un quiz ?",
+      "answers": [
+        "Le corriger publiquement immédiatement",
+        "Lui faire une remarque sarcastique pour détendre l’atmosphère",
+        "Ne rien dire du tout",
+        "L’encourager et l’aider à comprendre l’erreur" 
+      ],
+      "correct": 3
     },
     {
-        "id": 3,
-        "nom": "On joue pour le fun, pas pour la compète (sauf si tout le monde veut)",
-        "regle de bienveillance": "👉 L’esprit est collaboratif. Si vous préférez coopérer au lieu de vous affronter, c’est totalement encouragé."
+      "question": "Quel est un exemple de communication bienveillante ?",
+      "answers": [
+        "« Franchement, c’est évident comme question ! »",
+        "« Tu n’as pas révisé ou quoi ? »",
+        "« Je ne suis pas d’accord, mais je comprends ton raisonnement. »", 
+        "« Je préfère quand c’est moi qui réponds. »"
+      ],
+      "correct": 2
     },
     {
-        "id":4,
-        "nom": "Les réponses (presque bonnes) sont bienvenues",
-        "regle de bienveillance":"👉 On valorise la réflexion, même approximative. Une idée pas tout à fait juste peut ouvrir un débat intéressant."
+      "question": "Quelle attitude favorise un climat bienveillant pendant un jeu ?",
+      "answers": [
+        "Couper la parole pour aller plus vite",
+        "Laisser de l’espace pour que chacun·e s’exprime", 
+        "Imposer ses réponses quand on est sûr·e",
+        "S’impatienter quand quelqu’un hésite"
+      ],
+      "correct": 1
     },
     {
-        "id": 5,
-        "nom": "Respect et écoute avant tout",
-        "regle de bienveillance": "👉 Pas de moqueries, pas de (tu savais pas ça ?). Chacun·e a son parcours et ses connaissances."
+      "question": "Quel comportement est le plus bienveillant dans un groupe ?",
+      "answers": [
+        "Partager ses connaissances sans écraser les autres", 
+        "Essayer d’avoir toujours raison",
+        "Ignorer les idées qui ne nous plaisent pas",
+        "Faire des blagues sur les erreurs des autres"
+      ],
+      "correct": 0
     },
     {
-        "id": 6,
-        "nom":"Aide possible entre participant·es" ,
-        "regle de bienveillance": "👉 Vous pouvez discuter, donner des indices (gentils), voire répondre ensemble si vous en avez envie."
+      "question": "Quand une personne partage une idée, on doit :",
+      "answers": [
+        "L’écouter sans l’interrompre", 
+        "Répondre tout de suite pour donner son avis",
+        "Lui dire si on pense qu’elle se trompe",
+        "Ignorer si ce n’est pas intéressant"
+      ],
+      "correct": 0
     },
     {
-        "id":7 ,
-        "nom":"Bonus bienveillance" ,
-        "regle de bienveillance": "👉 Donne une bonne réponse ET fais un compliment sincère à un·e autre joueur·se ? +1 point bonus ❤️"
+      "question": "La bienveillance, c’est aussi :",
+      "answers": [
+        "Dire ce que l’on pense sans filtre",
+        "Choisir des mots qui respectent l’autre", 
+        "Éviter tout conflit même si c’est important",
+        "Ne jamais critiquer"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Comment réagir si quelqu’un a du mal à comprendre ?",
+      "answers": [
+        "Lui expliquer patiemment avec des exemples", 
+        "Lui dire de revoir les bases",
+        "L’ignorer pour ne pas perdre de temps",
+        "Demander à quelqu’un d’autre de répondre"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Un compliment bienveillant est :",
+      "answers": [
+        "Flatteur mais faux",
+        "Sincère et encourageant", 
+        "Utilisé pour manipuler",
+        "Fait uniquement quand quelqu’un gagne"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "La bienveillance est utile dans un quiz parce que :",
+      "answers": [
+        "Elle permet de gagner plus facilement",
+        "Elle rend l’ambiance plus agréable pour tout le monde", 
+        "Elle permet de juger ceux qui ne savent pas",
+        "Elle élimine la compétition"
+      ],
+      "correct": 1
     }
-]
+  ]
+}
