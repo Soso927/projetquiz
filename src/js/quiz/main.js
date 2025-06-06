@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // Fonction principale pour démarrer le quiz
 async function demarrerJeu() {
-  const questions = await chargerQuestions("data/rire.json"); // Modifier le chemin si besoin
+  const questions = await chargerQuestions("data/bienveillance.json ,data/dev.json,data/rire.json"); // Modifier le chemin si besoin
   poserQuestion(questions, 0);
 }
 

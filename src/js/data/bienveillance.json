@@ -1,113 +1,105 @@
 {
-  
   "theme": "Bienveillance",
-
-  
   "questions": [
     {
-     
       "question": "La bienveillance, c’est avant tout :",
-      
-   
-      "answers": [
+      "choices": [
         "Faire plaisir à tout le monde",
         "Être gentil même quand on est en colère",
         "Porter attention aux autres avec respect et compréhension", 
         "Éviter les conflits à tout prix"
       ],
-
-      
-      "correct": 2
+      "answer": "Porter attention aux autres avec respect et compréhension"
     },
     {
       "question": "Que faire si un·e collègue se trompe pendant un quiz ?",
-      "answers": [
+      "choices": [
         "Le corriger publiquement immédiatement",
         "Lui faire une remarque sarcastique pour détendre l’atmosphère",
         "Ne rien dire du tout",
         "L’encourager et l’aider à comprendre l’erreur" 
       ],
-      "correct": 3
+      "answer": "L’encourager et l’aider à comprendre l’erreur"
     },
     {
       "question": "Quel est un exemple de communication bienveillante ?",
-      "answers": [
+      "choices": [
         "« Franchement, c’est évident comme question ! »",
         "« Tu n’as pas révisé ou quoi ? »",
         "« Je ne suis pas d’accord, mais je comprends ton raisonnement. »", 
         "« Je préfère quand c’est moi qui réponds. »"
       ],
-      "correct": 2
+      "answer": "« Je ne suis pas d’accord, mais je comprends ton raisonnement. »"
     },
     {
       "question": "Quelle attitude favorise un climat bienveillant pendant un jeu ?",
-      "answers": [
+      "choices": [
         "Couper la parole pour aller plus vite",
         "Laisser de l’espace pour que chacun·e s’exprime", 
         "Imposer ses réponses quand on est sûr·e",
         "S’impatienter quand quelqu’un hésite"
       ],
-      "correct": 1
+      "answer": "Laisser de l’espace pour que chacun·e s’exprime"
     },
     {
       "question": "Quel comportement est le plus bienveillant dans un groupe ?",
-      "answers": [
+      "choices": [
         "Partager ses connaissances sans écraser les autres", 
         "Essayer d’avoir toujours raison",
         "Ignorer les idées qui ne nous plaisent pas",
         "Faire des blagues sur les erreurs des autres"
       ],
-      "correct": 0
+      "answer": "Partager ses connaissances sans écraser les autres"
     },
     {
       "question": "Quand une personne partage une idée, on doit :",
-      "answers": [
+      "choices": [
         "L’écouter sans l’interrompre", 
         "Répondre tout de suite pour donner son avis",
         "Lui dire si on pense qu’elle se trompe",
         "Ignorer si ce n’est pas intéressant"
       ],
-      "correct": 0
+      "answer": "L’écouter sans l’interrompre"
     },
     {
       "question": "La bienveillance, c’est aussi :",
-      "answers": [
+      "choices": [
         "Dire ce que l’on pense sans filtre",
         "Choisir des mots qui respectent l’autre", 
         "Éviter tout conflit même si c’est important",
         "Ne jamais critiquer"
       ],
-      "correct": 1
+      "answer": "Choisir des mots qui respectent l’autre"
     },
     {
       "question": "Comment réagir si quelqu’un a du mal à comprendre ?",
-      "answers": [
+      "choices": [
         "Lui expliquer patiemment avec des exemples", 
         "Lui dire de revoir les bases",
         "L’ignorer pour ne pas perdre de temps",
         "Demander à quelqu’un d’autre de répondre"
       ],
-      "correct": 0
+      "answer": "Lui expliquer patiemment avec des exemples"
     },
     {
       "question": "Un compliment bienveillant est :",
-      "answers": [
+      "choices": [
         "Flatteur mais faux",
         "Sincère et encourageant", 
         "Utilisé pour manipuler",
         "Fait uniquement quand quelqu’un gagne"
       ],
-      "correct": 1
+      "answer": "Sincère et encourageant"
     },
     {
       "question": "La bienveillance est utile dans un quiz parce que :",
-      "answers": [
+      "choices": [
         "Elle permet de gagner plus facilement",
         "Elle rend l’ambiance plus agréable pour tout le monde", 
         "Elle permet de juger ceux qui ne savent pas",
         "Elle élimine la compétition"
       ],
-      "correct": 1
+      "answer": "Elle rend l’ambiance plus agréable pour tout le monde"
     }
   ]
 }
