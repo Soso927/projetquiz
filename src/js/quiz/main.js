@@ -6,11 +6,29 @@ document.addEventListener("DOMContentLoaded", () => {
   demarrerJeu();
 });
 
-// Fonction principale pour démarrer le quiz
-async function demarrerJeu() {
-  const questions = await chargerQuestions("data/bienveillance.json ,data/dev.json,data/rire.json"); // Modifier le chemin si besoin
-  poserQuestion(questions, 0);
+async function chargerPlusieursQuestions(chemins) {
+  try {
+    const promesses = chemins.map(chemin =>
+      fetch(chemin)
+        .then(response => response.json())
+        .then(data => data.questions) // 🔥 ajout clé ici
+        .catch(error => {
+          console.error(`Erreur lors du chargement de ${chemin}:`, error);
+          throw error;
+        })
+    );
+
+    return await Promise.all(promesses);
+  } catch (error) {
+    console.error('Erreur globale lors du chargement :', error);
+    throw error;
+  }
 }
+
+// async function demarrerJeu() {
+//   const questions = await chargerQuestions("[src/js/data/bienveillance.json ,src/js/data/dev.json,src/js/data/rire.json"); // Modifier le chemin si besoin
+//   poserQuestion(questions, 0);
+// }
 
 // Charger les questions depuis un fichier JSON
 async function chargerQuestions(fichier) {
