@@ -5,9 +5,9 @@
   <title>La Quête du Code</title>
   
   <link rel="stylesheet" href="./src/css/style.css" />
-  <script src="./src/js/data/bienveillance.json" defer></script>
-  <script src="./src/js/data/dev.json" defer></script>
-  <script src="./src/js/data/rire.json" defer></script>
+  <script type="module" src="./src/js/data/bienveillance.json" ></script>
+  <script type="module" src="./src/js/data/dev.json" ></script>
+  <script type="module" src="./src/js/data/rire.json" ></script>
 
   <script type="module" src="./src/js/quiz/logique.js" defer></script>
   
@@ -31,6 +31,7 @@
     <div id="quiz-container">
       <div id="question-container">
         <h2 id="question">Voici la question :</h2>
+        <p id="question-label"></p>
         <ul id="answers">
         </ul>
       </div>
