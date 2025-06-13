@@ -1,14 +1,7 @@
-// Imports statiques des fichiers JSON
-import dev from './src/js/data/dev.json' with { type: 'json'};
-import bienveillance from './bienveillance.json' with { type: 'json'};
-import rire from '/src/js/data/rire.json' with { type: 'json'};
 
-// Objet pour mapper les thèmes avec leurs données correspondantes
-const themeData = {
-    dev: dev,
-    bienveillance: bienveillance,
-    rire: rire
-};
+
+
+
 
 document.addEventListener("DOMContentLoaded", () => {
     const buttons = document.querySelectorAll("#choix-theme button");
@@ -20,10 +13,25 @@ document.addEventListener("DOMContentLoaded", () => {
     nom.textContent = "";
 
     buttons.forEach(button => {
-        button.addEventListener("click", () => {
+        button.addEventListener("click",async () => {
             const theme = button.dataset.theme;
-            const data = themeData[theme];
-            
+
+            // fetch("src/js/data/dev.json")
+            //     .then(response => {
+            //         console.log(response)
+            //         return response.json();
+            //     })
+            //     .then(data => {
+            //         console.log(data);
+            //     })
+            //     console.log("bonjour")
+            console.log(theme);
+            const url = `src/js/data/${theme}.json`;
+            const response = await fetch (url);
+            console.log(response);
+            const data = await response.json();
+            console.log(data);
+
             if (data && data.questions && data.questions.length > 0) {
                 currentQuestions = data.questions;
                 currentQuestionIndex = 0;

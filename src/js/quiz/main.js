@@ -1,7 +1,7 @@
 // Imports statiques des fichiers JSON
 import bienveillance from 'src/js/data/bienveillance.json' with { type: 'json' };
-import dev from 'src/js/data/dev.json' with { type: 'json' };
-import rire from 'src/js/data/rire.json' with { type: 'json' };
+import dev from 'src/js/data/dev.json' ;
+import rire from 'src/js/data/rire.json' ;
 
 // Objet regroupant toutes les questions
 const questions = {

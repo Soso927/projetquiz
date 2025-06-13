@@ -1,105 +1,132 @@
-{
-  "theme": "Bienveillance",
-  "questions": [
-    {
-      "question": "La bienveillance, c’est avant tout :",
-      "choices": [
-        "Faire plaisir à tout le monde",
-        "Être gentil même quand on est en colère",
-        "Porter attention aux autres avec respect et compréhension", 
-        "Éviter les conflits à tout prix"
-      ],
-      "answer": "Porter attention aux autres avec respect et compréhension"
-    },
-    {
-      "question": "Que faire si un·e collègue se trompe pendant un quiz ?",
-      "choices": [
-        "Le corriger publiquement immédiatement",
-        "Lui faire une remarque sarcastique pour détendre l’atmosphère",
-        "Ne rien dire du tout",
-        "L’encourager et l’aider à comprendre l’erreur" 
-      ],
-      "answer": "L’encourager et l’aider à comprendre l’erreur"
-    },
-    {
-      "question": "Quel est un exemple de communication bienveillante ?",
-      "choices": [
-        "« Franchement, c’est évident comme question ! »",
-        "« Tu n’as pas révisé ou quoi ? »",
-        "« Je ne suis pas d’accord, mais je comprends ton raisonnement. »", 
-        "« Je préfère quand c’est moi qui réponds. »"
-      ],
-      "answer": "« Je ne suis pas d’accord, mais je comprends ton raisonnement. »"
-    },
-    {
-      "question": "Quelle attitude favorise un climat bienveillant pendant un jeu ?",
-      "choices": [
-        "Couper la parole pour aller plus vite",
-        "Laisser de l’espace pour que chacun·e s’exprime", 
-        "Imposer ses réponses quand on est sûr·e",
-        "S’impatienter quand quelqu’un hésite"
-      ],
-      "answer": "Laisser de l’espace pour que chacun·e s’exprime"
-    },
-    {
-      "question": "Quel comportement est le plus bienveillant dans un groupe ?",
-      "choices": [
-        "Partager ses connaissances sans écraser les autres", 
-        "Essayer d’avoir toujours raison",
-        "Ignorer les idées qui ne nous plaisent pas",
-        "Faire des blagues sur les erreurs des autres"
-      ],
-      "answer": "Partager ses connaissances sans écraser les autres"
-    },
-    {
-      "question": "Quand une personne partage une idée, on doit :",
-      "choices": [
-        "L’écouter sans l’interrompre", 
-        "Répondre tout de suite pour donner son avis",
-        "Lui dire si on pense qu’elle se trompe",
-        "Ignorer si ce n’est pas intéressant"
-      ],
-      "answer": "L’écouter sans l’interrompre"
-    },
-    {
-      "question": "La bienveillance, c’est aussi :",
-      "choices": [
-        "Dire ce que l’on pense sans filtre",
-        "Choisir des mots qui respectent l’autre", 
-        "Éviter tout conflit même si c’est important",
-        "Ne jamais critiquer"
-      ],
-      "answer": "Choisir des mots qui respectent l’autre"
-    },
-    {
-      "question": "Comment réagir si quelqu’un a du mal à comprendre ?",
-      "choices": [
-        "Lui expliquer patiemment avec des exemples", 
-        "Lui dire de revoir les bases",
-        "L’ignorer pour ne pas perdre de temps",
-        "Demander à quelqu’un d’autre de répondre"
-      ],
-      "answer": "Lui expliquer patiemment avec des exemples"
-    },
-    {
-      "question": "Un compliment bienveillant est :",
-      "choices": [
-        "Flatteur mais faux",
-        "Sincère et encourageant", 
-        "Utilisé pour manipuler",
-        "Fait uniquement quand quelqu’un gagne"
-      ],
-      "answer": "Sincère et encourageant"
-    },
-    {
-      "question": "La bienveillance est utile dans un quiz parce que :",
-      "choices": [
-        "Elle permet de gagner plus facilement",
-        "Elle rend l’ambiance plus agréable pour tout le monde", 
-        "Elle permet de juger ceux qui ne savent pas",
-        "Elle élimine la compétition"
-      ],
-      "answer": "Elle rend l’ambiance plus agréable pour tout le monde"
-    }
-  ]
-}
+[
+  {
+    "id": 1,
+    "question": "La bienveillance, c’est avant tout :",
+    "type": "multiple",
+    "choices": [
+      "Faire plaisir à tout le monde",
+      "Être gentil même quand on est en colère",
+      "Porter attention aux autres avec respect et compréhension",
+      "Éviter les conflits à tout prix"
+    ],
+    "answer": "Porter attention aux autres avec respect et compréhension",
+    "correcte": true
+  },
+  {
+    "id": 2,
+    "question": "Que faire si un·e collègue se trompe pendant un quiz ?",
+    "type": "multiple",
+    "choices": [
+      "Le corriger publiquement immédiatement",
+      "Lui faire une remarque sarcastique pour détendre l’atmosphère",
+      "Ne rien dire du tout",
+      "L’encourager et l’aider à comprendre l’erreur"
+    ],
+    "answer": "L’encourager et l’aider à comprendre l’erreur",
+    "correcte": true
+  },
+  {
+    "id": 3,
+    "question": "Quel est un exemple de communication bienveillante ?",
+    "type": "multiple",
+    "choices": [
+      "« Franchement, c’est évident comme question ! »",
+      "« Tu n’as pas révisé ou quoi ? »",
+      "« Je ne suis pas d’accord, mais je comprends ton raisonnement. »",
+      "« Je préfère quand c’est moi qui réponds. »"
+    ],
+    "answer": "« Je ne suis pas d’accord, mais je comprends ton raisonnement. »",
+    "correcte": true
+  },
+  {
+    "id": 4,
+    "question": "Quelle attitude favorise un climat bienveillant pendant un jeu ?",
+    "type": "multiple",
+    "choices": [
+      "Couper la parole pour aller plus vite",
+      "Laisser de l’espace pour que chacun·e s’exprime",
+      "Imposer ses réponses quand on est sûr·e",
+      "S’impatienter quand quelqu’un hésite"
+    ],
+    "answer": "Laisser de l’espace pour que chacun·e s’exprime",
+    "correcte": true
+  },
+  {
+    "id": 5,
+    "question": "Quel comportement est le plus bienveillant dans un groupe ?",
+    "type": "multiple",
+    "choices": [
+      "Partager ses connaissances sans écraser les autres",
+      "Essayer d’avoir toujours raison",
+      "Ignorer les idées qui ne nous plaisent pas",
+      "Faire des blagues sur les erreurs des autres"
+    ],
+    "answer": "Partager ses connaissances sans écraser les autres",
+    "correcte": true
+  },
+  {
+    "id": 6,
+    "question": "Quand une personne partage une idée, on doit :",
+    "type": "multiple",
+    "choices": [
+      "L’écouter sans l’interrompre",
+      "Répondre tout de suite pour donner son avis",
+      "Lui dire si on pense qu’elle se trompe",
+      "Ignorer si ce n’est pas intéressant"
+    ],
+    "answer": "L’écouter sans l’interrompre",
+    "correcte": true
+  },
+  {
+    "id": 7,
+    "question": "La bienveillance, c’est aussi :",
+    "type": "multiple",
+    "choices": [
+      "Dire ce que l’on pense sans filtre",
+      "Choisir des mots qui respectent l’autre",
+      "Éviter tout conflit même si c’est important",
+      "Ne jamais critiquer"
+    ],
+    "answer": "Choisir des mots qui respectent l’autre",
+    "correcte": true
+  },
+  {
+    "id": 8,
+    "question": "Comment réagir si quelqu’un a du mal à comprendre ?",
+    "type": "multiple",
+    "choices": [
+      "Lui expliquer patiemment avec des exemples",
+      "Lui dire de revoir les bases",
+      "L’ignorer pour ne pas perdre de temps",
+      "Demander à quelqu’un d’autre de répondre"
+    ],
+    "answer": "Lui expliquer patiemment avec des exemples",
+    "correcte": true
+  },
+  {
+    "id": 9,
+    "question": "Un compliment bienveillant est :",
+    "type": "multiple",
+    "choices": [
+      "Flatteur mais faux",
+      "Sincère et encourageant",
+      "Utilisé pour manipuler",
+      "Fait uniquement quand quelqu’un gagne"
+    ],
+    "answer": "Sincère et encourageant",
+    "correcte": true
+  },
+  {
+    "id": 10,
+    "question": "La bienveillance est utile dans un quiz parce que :",
+    "type": "multiple",
+    "choices": [
+      "Elle permet de gagner plus facilement",
+      "Elle rend l’ambiance plus agréable pour tout le monde",
+      "Elle permet de juger ceux qui ne savent pas",
+      "Elle élimine la compétition"
+    ],
+    "answer": "Elle rend l’ambiance plus agréable pour tout le monde",
+    "correcte": true
+  }
+]
