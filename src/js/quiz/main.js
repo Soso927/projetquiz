@@ -73,6 +73,8 @@ function poserQuestion(liste, index) {
             }
         });
         container.appendChild(bouton);
+        afficherQuestion.appendChild(question);
+        afficherQuestion.appendChild(reponses);
     });
 }
 
